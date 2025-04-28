@@ -42,4 +42,5 @@ def index():
 if __name__ == "__main__":
     # Ensure the app runs only when executed directly
     app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
     # Start the Flask development server with debug mode enabled
