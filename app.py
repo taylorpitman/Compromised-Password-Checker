@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 from bloom_filter import BloomFilter
-
+import os
 app = Flask(__name__)
 
 # Create Bloom Filter
@@ -40,7 +40,5 @@ def index():
     return render_template("index.html", message=message)
 
 if __name__ == "__main__":
-    # Ensure the app runs only when executed directly
-    app.run(debug=True)
-    app.run(host="0.0.0.0", port=10000)
-    # Start the Flask development server with debug mode enabled
+    port = int(os.environ.get("PORT", 10000))  # Get the port from Render or default to 10000
+    app.run(host="0.0.0.0", port=port)
