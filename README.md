@@ -11,6 +11,12 @@ Users can enter a password into a simple web form, and the app will check if it 
 
 ---
 
+## 🌐 Live Demo
+
+You can try the app live here: [Bloom Filter Password Checker - Live Demo](https://your-app-name.onrender.com)
+
+---
+
 ## 🚀 How to Run the Project
 
 ### 1. Install Requirements
